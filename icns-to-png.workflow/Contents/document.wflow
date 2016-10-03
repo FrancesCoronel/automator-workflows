@@ -62,7 +62,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>defaultLocation</key>
-					<string>~/Downloads</string>
+					<string>~/Desktop</string>
 					<key>granularity</key>
 					<integer>0</integer>
 					<key>multipleSelection</key>
@@ -85,7 +85,7 @@
 				<key>Class Name</key>
 				<string>AMAskForFinderItemsAction</string>
 				<key>InputUUID</key>
-				<string>A8C3A0E8-80A8-4013-80B2-551555667A06</string>
+				<string>9118A751-EAB1-42AD-AAC8-32981BD3C2B0</string>
 				<key>Keywords</key>
 				<array>
 					<string>Find</string>
@@ -97,9 +97,9 @@
 					<string>Prompt</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>C75CD603-6A35-426F-AA8F-170C12A997BC</string>
+				<string>D8448631-1FC2-4A34-924F-B4A253A1F8C5</string>
 				<key>UUID</key>
-				<string>03A473CC-E822-4AE8-A386-A7B89B2BC4C5</string>
+				<string>7108BB39-E3F6-43EF-A576-C041BE98D698</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -159,10 +159,12 @@
 						<string>3</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>257.000000:158.000000</string>
+				<string>529.000000:158.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -184,31 +186,136 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>9</string>
+				<string>2.0.1</string>
 				<key>AMApplication</key>
 				<array>
-					<string>Preview</string>
+					<string>Finder</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
-					<key>autoGenerateOutputName</key>
+					<key>replaceExisting</key>
 					<dict/>
-					<key>outputDirectory</key>
+					<key>toDirectory</key>
 					<dict>
 						<key>isPathPopUp</key>
 						<true/>
 						<key>variableUUIDsInMenu</key>
 						<array/>
 					</dict>
-					<key>outputHeight</key>
-					<dict/>
-					<key>outputName</key>
-					<dict/>
-					<key>outputWidth</key>
-					<dict/>
-					<key>pageSizeMode</key>
-					<dict/>
-					<key>replaceExistingOutput</key>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Copy Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Copy Finder Items</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>replaceExisting</key>
+					<false/>
+					<key>toDirectory</key>
+					<string>~/Desktop</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.CopyFiles</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMCopyFilesAction</string>
+				<key>InputUUID</key>
+				<string>FDCF0F91-7F2F-4186-B716-0925F3151CA2</string>
+				<key>Keywords</key>
+				<array>
+					<string>File</string>
+					<string>Copy</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>C334EFF8-8506-4C96-8546-77744E695BCE</string>
+				<key>UUID</key>
+				<string>3586BEC6-A1B6-48C5-89F6-1DB68510269D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>toDirectory</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>replaceExisting</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>529.000000:261.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Copy Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Preview</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>imageType</key>
 					<dict/>
 				</dict>
 				<key>AMProvides</key>
@@ -220,63 +327,71 @@
 						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
-				<key>AMRequiredResources</key>
-				<array/>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/New PDF from Images.action</string>
+				<string>/System/Library/Automator/Change Type of Images.action</string>
 				<key>ActionName</key>
-				<string>New PDF from Images</string>
+				<string>Change Type of Images</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>autoGenerateOutputName</key>
-					<false/>
-					<key>outputDirectory</key>
-					<string>~/Downloads</string>
-					<key>outputHeight</key>
-					<real>768</real>
-					<key>outputName</key>
-					<string>New PDF from Images Output</string>
-					<key>outputWidth</key>
-					<real>1024</real>
-					<key>pageSizeMode</key>
-					<integer>0</integer>
-					<key>replaceExistingOutput</key>
-					<false/>
+					<key>imageType</key>
+					<string>PNG</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.NewPDFfromImages</string>
+				<string>com.apple.Automator.ChangeImageType</string>
 				<key>CFBundleVersion</key>
-				<string>9</string>
+				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
 				<array>
-					<string>AMCategoryPDFs</string>
+					<string>AMCategoryPhotos</string>
 				</array>
 				<key>Class Name</key>
-				<string>NewFromImages</string>
+				<string>AMChangeImageTypeAction</string>
 				<key>InputUUID</key>
-				<string>4C5CCCB2-C088-4D69-9239-F3E8CA8AF7CD</string>
+				<string>E5278C1A-F562-4C48-948B-B8D623B218A4</string>
 				<key>Keywords</key>
-				<array/>
+				<array>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>Change</string>
+					<string>Convert</string>
+					<string>Set</string>
+				</array>
 				<key>OutputUUID</key>
-				<string>55C6FD75-FF1D-422E-B776-B6DB1B8BE063</string>
+				<string>883D9CDB-3B5F-4F82-BA47-3F81ACE3472D</string>
 				<key>UUID</key>
-				<string>80E2CD72-F63B-4047-AE2A-C158FA65E104</string>
+				<string>B04DF8F0-E87E-4990-807C-86C09DC3D485</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Preview</string>
 				</array>
 				<key>arguments</key>
-				<dict/>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>TIFF</string>
+						<key>name</key>
+						<string>imageType</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>257.000000:363.000000</string>
+				<string>529.000000:365.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/New PDF from Images.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Change Type of Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -284,12 +399,19 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>F678EE6F-F116-45B8-8C24-70A732E80961</key>
+		<key>11488BC6-5BAB-4DD5-990F-C37E69FA5115</key>
 		<dict>
 			<key>from</key>
-			<string>03A473CC-E822-4AE8-A386-A7B89B2BC4C5 - 03A473CC-E822-4AE8-A386-A7B89B2BC4C5</string>
+			<string>3586BEC6-A1B6-48C5-89F6-1DB68510269D - 3586BEC6-A1B6-48C5-89F6-1DB68510269D</string>
 			<key>to</key>
-			<string>80E2CD72-F63B-4047-AE2A-C158FA65E104 - 80E2CD72-F63B-4047-AE2A-C158FA65E104</string>
+			<string>B04DF8F0-E87E-4990-807C-86C09DC3D485 - B04DF8F0-E87E-4990-807C-86C09DC3D485</string>
+		</dict>
+		<key>FDBE0FF7-8560-4F76-94E7-998528F6D4A8</key>
+		<dict>
+			<key>from</key>
+			<string>7108BB39-E3F6-43EF-A576-C041BE98D698 - 7108BB39-E3F6-43EF-A576-C041BE98D698</string>
+			<key>to</key>
+			<string>3586BEC6-A1B6-48C5-89F6-1DB68510269D - 3586BEC6-A1B6-48C5-89F6-1DB68510269D</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
