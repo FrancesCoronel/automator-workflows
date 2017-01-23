@@ -21,29 +21,37 @@
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.2.1</string>
+				<string>v.1.1.1</string>
 				<key>AMApplication</key>
 				<array>
-					<string>Finder</string>
+					<string>Automator</string>
+					<string>TextEdit</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
-					<key>defaultLocation</key>
+					<key>buttonAffirmative</key>
+					<dict/>
+					<key>buttonNegative</key>
+					<dict/>
+					<key>defaultAnswer</key>
 					<dict>
-						<key>isPathPopUp</key>
-						<true/>
-						<key>variableUUIDsInMenu</key>
-						<array/>
+						<key>tokenizedValue</key>
+						<array>
+							<string>$(D0E2687D-835E-433D-8883-1039B2D9C3AD)</string>
+						</array>
 					</dict>
-					<key>granularity</key>
-					<dict/>
-					<key>multipleSelection</key>
-					<dict/>
-					<key>promptMessage</key>
+					<key>defaultMessage</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>rename?</string>
+						</array>
+					</dict>
+					<key>requireInput</key>
 					<dict/>
 				</dict>
 				<key>AMProvides</key>
@@ -52,66 +60,65 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Ask for Finder Items.action</string>
+				<string>/System/Library/Automator/Ask for Text.action</string>
 				<key>ActionName</key>
-				<string>Ask for Finder Items</string>
+				<string>Ask for Text</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>defaultLocation</key>
-					<string>~/Downloads</string>
-					<key>granularity</key>
-					<integer>0</integer>
-					<key>multipleSelection</key>
+					<key>buttonAffirmative</key>
+					<string>OK</string>
+					<key>buttonNegative</key>
+					<string>Cancel</string>
+					<key>defaultAnswer</key>
+					<string>$(D0E2687D-835E-433D-8883-1039B2D9C3AD)</string>
+					<key>defaultMessage</key>
+					<string>rename?</string>
+					<key>requireInput</key>
 					<true/>
-					<key>promptMessage</key>
-					<string>Choose a Finder Item:</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.AskForFinderItems</string>
+				<string>com.apple.Automator.TextInputDialog</string>
 				<key>CFBundleVersion</key>
-				<string>1.2.1</string>
+				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
 				<false/>
 				<key>Category</key>
 				<array>
-					<string>AMCategoryFilesAndFolders</string>
+					<string>AMCategoryText</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMAskForFinderItemsAction</string>
+				<string>AMAskForTextAction</string>
 				<key>InputUUID</key>
-				<string>703F3243-87F9-43B7-9B3B-BBB528694AC1</string>
+				<string>0358C653-B090-4689-8483-0FF0AC282354</string>
 				<key>Keywords</key>
 				<array>
-					<string>Find</string>
-					<string>Item</string>
-					<string>File</string>
-					<string>Folder</string>
+					<string>Text</string>
 					<string>Ask</string>
-					<string>Choose</string>
 					<string>Prompt</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>F1315A38-1A50-4EA1-8225-70BAE196271F</string>
+				<string>2730E987-F886-4E31-B10C-507D35554190</string>
 				<key>UUID</key>
-				<string>B1C5B60D-8505-46B0-823B-A63A922694E4</string>
+				<string>D0D98169-74F2-425C-9558-C18D350734DA</string>
 				<key>UnlocalizedApplications</key>
 				<array>
-					<string>Finder</string>
+					<string>Automator</string>
+					<string>TextEdit</string>
 				</array>
 				<key>arguments</key>
 				<dict>
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string></string>
 						<key>name</key>
-						<string>multipleSelection</string>
+						<string>defaultAnswer</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -122,9 +129,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<string>OK</string>
 						<key>name</key>
-						<string>granularity</string>
+						<string>buttonAffirmative</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -135,9 +142,9 @@
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<string>~/Desktop</string>
+						<string></string>
 						<key>name</key>
-						<string>defaultLocation</string>
+						<string>defaultMessage</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -148,9 +155,9 @@
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<string>Choose a Finder Item:</string>
+						<string>Cancel</string>
 						<key>name</key>
-						<string>promptMessage</string>
+						<string>buttonNegative</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -158,13 +165,26 @@
 						<key>uuid</key>
 						<string>3</string>
 					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>requireInput</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
 				</dict>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:158.000000</string>
+				<string>529.000000:252.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -184,7 +204,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.3.2</string>
+				<string>v.1.3.2</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
@@ -205,7 +225,7 @@
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>jacobs-university</string>
+							<string>$(D0E2687D-835E-433D-8883-1039B2D9C3AD)</string>
 						</array>
 					</dict>
 					<key>ignoreCase</key>
@@ -267,7 +287,7 @@
 					<key>dateToUse</key>
 					<integer>0</integer>
 					<key>defaultName</key>
-					<string>jacobs-university</string>
+					<string>$(D0E2687D-835E-433D-8883-1039B2D9C3AD)</string>
 					<key>ignoreCase</key>
 					<true/>
 					<key>includeExtensions</key>
@@ -293,7 +313,7 @@
 					<key>singleItemOption</key>
 					<integer>0</integer>
 					<key>startingNumber</key>
-					<real>1</real>
+					<integer>1</integer>
 					<key>textInput</key>
 					<string></string>
 					<key>textToFind</key>
@@ -316,7 +336,7 @@
 				<key>Class Name</key>
 				<string>AMRenameFinderItemsAction</string>
 				<key>InputUUID</key>
-				<string>30801AA1-6B62-4608-8AF3-26BE65E585CA</string>
+				<string>6A713455-7984-4993-8CF1-69E7C44A3BB3</string>
 				<key>Keywords</key>
 				<array>
 					<string>Name</string>
@@ -337,9 +357,9 @@
 					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>2A106540-451F-40DD-906D-D96A0175A135</string>
+				<string>71EBA13D-D45B-47B1-A8DF-0AB15E683BEA</string>
 				<key>UUID</key>
-				<string>68F83401-E437-425B-A73B-9C1082F51B12</string>
+				<string>A5F2ECDA-4A57-48D7-BAA7-D8675F262FE6</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -636,7 +656,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:372.000000</string>
+				<string>529.000000:466.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -646,18 +666,41 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>8926345B-7334-4530-AF74-381FB5A51CC6</key>
+		<key>9C90E47B-9643-47B5-A4FD-924579C4A3D7</key>
 		<dict>
 			<key>from</key>
-			<string>B1C5B60D-8505-46B0-823B-A63A922694E4 - B1C5B60D-8505-46B0-823B-A63A922694E4</string>
+			<string>D0D98169-74F2-425C-9558-C18D350734DA - D0D98169-74F2-425C-9558-C18D350734DA</string>
 			<key>to</key>
-			<string>68F83401-E437-425B-A73B-9C1082F51B12 - 68F83401-E437-425B-A73B-9C1082F51B12</string>
+			<string>A5F2ECDA-4A57-48D7-BAA7-D8675F262FE6 - A5F2ECDA-4A57-48D7-BAA7-D8675F262FE6</string>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>D0E2687D-835E-433D-8883-1039B2D9C3AD</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>response</string>
+			<key>value</key>
+			<string>Text</string>
+		</dict>
+	</array>
 	<key>workflowMetaData</key>
 	<dict>
+		<key>serviceApplicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>serviceApplicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
-		<string>com.apple.Automator.workflow</string>
+		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
 </dict>
 </plist>

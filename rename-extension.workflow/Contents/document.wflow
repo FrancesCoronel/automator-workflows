@@ -62,11 +62,11 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>defaultLocation</key>
-					<string>~/Downloads</string>
+					<string>~/Desktop</string>
 					<key>granularity</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>multipleSelection</key>
-					<true/>
+					<false/>
 					<key>promptMessage</key>
 					<string>Choose a Finder Item:</string>
 				</dict>
@@ -85,7 +85,7 @@
 				<key>Class Name</key>
 				<string>AMAskForFinderItemsAction</string>
 				<key>InputUUID</key>
-				<string>703F3243-87F9-43B7-9B3B-BBB528694AC1</string>
+				<string>B32F5C29-C87C-42BC-B981-57F98C11D262</string>
 				<key>Keywords</key>
 				<array>
 					<string>Find</string>
@@ -97,9 +97,9 @@
 					<string>Prompt</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>F1315A38-1A50-4EA1-8225-70BAE196271F</string>
+				<string>3C13DC71-7E8C-4E85-8F19-A310523329ED</string>
 				<key>UUID</key>
-				<string>B1C5B60D-8505-46B0-823B-A63A922694E4</string>
+				<string>815ABE33-4D08-4F3B-9927-0052766C05AB</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -159,12 +159,116 @@
 						<string>3</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:158.000000</string>
+				<string>529.000000:158.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>recurse</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Folder Contents.action</string>
+				<key>ActionName</key>
+				<string>Get Folder Contents</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>recurse</key>
+					<true/>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.GetFolderContents</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>GetFolderContents</string>
+				<key>InputUUID</key>
+				<string>24B4E74C-B92E-486F-BF43-C6300C0EB21D</string>
+				<key>Keywords</key>
+				<array>
+					<string>File</string>
+					<string>Folder</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>EE43F6CD-DBCD-4773-8EE0-3216FCB09A90</string>
+				<key>UUID</key>
+				<string>E852F941-69AA-4A89-8827-B1D5E772B003</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>recurse</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>529.000000:258.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Folder Contents.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -202,12 +306,7 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict>
-						<key>tokenizedValue</key>
-						<array>
-							<string>jacobs-university</string>
-						</array>
-					</dict>
+					<dict/>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -229,7 +328,12 @@
 					<key>renameType</key>
 					<dict/>
 					<key>replaceWithText</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>md</string>
+						</array>
+					</dict>
 					<key>singleItemOption</key>
 					<dict/>
 					<key>startingNumber</key>
@@ -237,7 +341,12 @@
 					<key>textInput</key>
 					<dict/>
 					<key>textToFind</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>txt</string>
+						</array>
+					</dict>
 					<key>useLeadingZeros</key>
 					<dict/>
 				</dict>
@@ -253,7 +362,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Rename Finder Items: Make Sequential</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -267,11 +376,11 @@
 					<key>dateToUse</key>
 					<integer>0</integer>
 					<key>defaultName</key>
-					<string>jacobs-university</string>
+					<string></string>
 					<key>ignoreCase</key>
 					<true/>
 					<key>includeExtensions</key>
-					<integer>0</integer>
+					<integer>2</integer>
 					<key>insertionPosition</key>
 					<integer>0</integer>
 					<key>minimumCount</key>
@@ -285,19 +394,19 @@
 					<key>numberSeparator</key>
 					<integer>0</integer>
 					<key>renameItems</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>renameType</key>
-					<integer>3</integer>
+					<integer>4</integer>
 					<key>replaceWithText</key>
-					<string></string>
+					<string>md</string>
 					<key>singleItemOption</key>
 					<integer>0</integer>
 					<key>startingNumber</key>
-					<real>1</real>
+					<integer>1</integer>
 					<key>textInput</key>
 					<string></string>
 					<key>textToFind</key>
-					<string></string>
+					<string>txt</string>
 					<key>useLeadingZeros</key>
 					<false/>
 				</dict>
@@ -316,7 +425,7 @@
 				<key>Class Name</key>
 				<string>AMRenameFinderItemsAction</string>
 				<key>InputUUID</key>
-				<string>30801AA1-6B62-4608-8AF3-26BE65E585CA</string>
+				<string>2F25DDD4-BF52-4A4E-9291-94DF066B5098</string>
 				<key>Keywords</key>
 				<array>
 					<string>Name</string>
@@ -337,9 +446,9 @@
 					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>2A106540-451F-40DD-906D-D96A0175A135</string>
+				<string>73966E40-2484-487B-9D7E-B63124C6407F</string>
 				<key>UUID</key>
-				<string>68F83401-E437-425B-A73B-9C1082F51B12</string>
+				<string>05CFC46D-8AE4-4952-81E5-EA17DD3C03B2</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -633,10 +742,12 @@
 						<string>9</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:372.000000</string>
+				<string>529.000000:446.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -646,12 +757,19 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>8926345B-7334-4530-AF74-381FB5A51CC6</key>
+		<key>4376ED2C-01D1-430F-9DEB-E5EC89FDD0E3</key>
 		<dict>
 			<key>from</key>
-			<string>B1C5B60D-8505-46B0-823B-A63A922694E4 - B1C5B60D-8505-46B0-823B-A63A922694E4</string>
+			<string>E852F941-69AA-4A89-8827-B1D5E772B003 - E852F941-69AA-4A89-8827-B1D5E772B003</string>
 			<key>to</key>
-			<string>68F83401-E437-425B-A73B-9C1082F51B12 - 68F83401-E437-425B-A73B-9C1082F51B12</string>
+			<string>05CFC46D-8AE4-4952-81E5-EA17DD3C03B2 - 05CFC46D-8AE4-4952-81E5-EA17DD3C03B2</string>
+		</dict>
+		<key>4D12A1CE-09C6-4916-9C1C-B8F909D63BFE</key>
+		<dict>
+			<key>from</key>
+			<string>815ABE33-4D08-4F3B-9927-0052766C05AB - 815ABE33-4D08-4F3B-9927-0052766C05AB</string>
+			<key>to</key>
+			<string>E852F941-69AA-4A89-8827-B1D5E772B003 - E852F941-69AA-4A89-8827-B1D5E772B003</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
