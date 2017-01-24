@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>419</string>
+	<string>428</string>
 	<key>AMApplicationVersion</key>
-	<string>2.6</string>
+	<string>2.7</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -162,7 +162,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>1089.000000:158.000000</string>
+				<string>301.500000:158.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -282,7 +282,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>1089.000000:261.000000</string>
+				<string>301.500000:261.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Copy Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -333,46 +333,6 @@
 				<string>Apply Quartz Filter to PDF Documents</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>EmbeddedQuartzFilter</key>
-					<dict>
-						<key>Domains</key>
-						<dict>
-							<key>Applications</key>
-							<true/>
-							<key>Printing</key>
-							<true/>
-						</dict>
-						<key>FilterData</key>
-						<dict>
-							<key>ColorSettings</key>
-							<dict>
-								<key>ImageSettings</key>
-								<dict>
-									<key>Compression Quality</key>
-									<real>0.568359375</real>
-									<key>ImageCompression</key>
-									<string>ImageJPEGCompress</string>
-									<key>ImageScaleSettings</key>
-									<dict>
-										<key>ImageResolution</key>
-										<integer>0</integer>
-										<key>ImageScaleFactor</key>
-										<real>0.75</real>
-										<key>ImageScaleInterpolate</key>
-										<integer>3</integer>
-										<key>ImageSizeMax</key>
-										<integer>2500</integer>
-										<key>ImageSizeMin</key>
-										<integer>128</integer>
-									</dict>
-								</dict>
-							</dict>
-						</dict>
-						<key>FilterType</key>
-						<integer>1</integer>
-						<key>Name</key>
-						<string>Reduce File Size Better</string>
-					</dict>
 					<key>URL</key>
 					<string>/Users/fvcproductions/Library/Filters/Reduce File Size Better.qfilter</string>
 				</dict>
@@ -410,7 +370,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>1089.000000:705.000000</string>
+				<string>301.500000:705.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Apply Quartz Filter to PDF Documents.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -884,7 +844,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>1089.000000:866.000000</string>
+				<string>301.500000:866.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1004,7 +964,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>1089.000000:969.000000</string>
+				<string>301.500000:969.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Move Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1014,28 +974,28 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0579DE61-73EE-4432-A35D-5127E7B1A7E9</key>
-		<dict>
-			<key>from</key>
-			<string>89E10FB3-5045-443B-84C7-9AF1A7362B9B - 89E10FB3-5045-443B-84C7-9AF1A7362B9B</string>
-			<key>to</key>
-			<string>AA3497B2-2CCC-4125-A60C-486189BFDB1C - AA3497B2-2CCC-4125-A60C-486189BFDB1C</string>
-		</dict>
-		<key>5C12E82A-612A-464B-AC4F-716BCC29F549</key>
-		<dict>
-			<key>from</key>
-			<string>AA3497B2-2CCC-4125-A60C-486189BFDB1C - AA3497B2-2CCC-4125-A60C-486189BFDB1C</string>
-			<key>to</key>
-			<string>C594A4CE-80EC-40AA-8259-1D90F8E0BBCC - C594A4CE-80EC-40AA-8259-1D90F8E0BBCC</string>
-		</dict>
-		<key>72A89472-5B23-44C5-A820-FB45EB5F5F57</key>
+		<key>30A679F7-6291-4220-9BCD-C363CF90B87C</key>
 		<dict>
 			<key>from</key>
 			<string>3B6821B5-88E3-4239-AE16-8DF3EE1F77DC - 3B6821B5-88E3-4239-AE16-8DF3EE1F77DC</string>
 			<key>to</key>
 			<string>4222CFDC-0156-4E01-87E5-87A246D576EE - 4222CFDC-0156-4E01-87E5-87A246D576EE</string>
 		</dict>
-		<key>9650DFC1-EAF2-4C20-84F9-B3A6967496F4</key>
+		<key>4CA056BD-D81F-49BA-9751-2CA1CCC091D4</key>
+		<dict>
+			<key>from</key>
+			<string>AA3497B2-2CCC-4125-A60C-486189BFDB1C - AA3497B2-2CCC-4125-A60C-486189BFDB1C</string>
+			<key>to</key>
+			<string>C594A4CE-80EC-40AA-8259-1D90F8E0BBCC - C594A4CE-80EC-40AA-8259-1D90F8E0BBCC</string>
+		</dict>
+		<key>4CC51061-CEA9-48A6-BF6F-2199DBA2EF39</key>
+		<dict>
+			<key>from</key>
+			<string>89E10FB3-5045-443B-84C7-9AF1A7362B9B - 89E10FB3-5045-443B-84C7-9AF1A7362B9B</string>
+			<key>to</key>
+			<string>AA3497B2-2CCC-4125-A60C-486189BFDB1C - AA3497B2-2CCC-4125-A60C-486189BFDB1C</string>
+		</dict>
+		<key>62BCED9D-01DF-41E1-B0BC-006674F7736E</key>
 		<dict>
 			<key>from</key>
 			<string>4222CFDC-0156-4E01-87E5-87A246D576EE - 4222CFDC-0156-4E01-87E5-87A246D576EE</string>
