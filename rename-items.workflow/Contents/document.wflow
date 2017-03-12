@@ -159,8 +159,6 @@
 						<string>3</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
@@ -204,7 +202,12 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>sprint1</string>
+						</array>
+					</dict>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -250,7 +253,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Rename Finder Items: Change Case</string>
+				<string>Rename Finder Items: Make Sequential</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -264,7 +267,7 @@
 					<key>dateToUse</key>
 					<integer>0</integer>
 					<key>defaultName</key>
-					<string></string>
+					<string>sprint1</string>
 					<key>ignoreCase</key>
 					<true/>
 					<key>includeExtensions</key>
@@ -282,9 +285,9 @@
 					<key>numberSeparator</key>
 					<integer>0</integer>
 					<key>renameItems</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>renameType</key>
-					<integer>2</integer>
+					<integer>3</integer>
 					<key>replaceWithText</key>
 					<string></string>
 					<key>singleItemOption</key>
@@ -630,12 +633,10 @@
 						<string>9</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>449.000000:318.000000</string>
+				<string>449.000000:372.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -645,7 +646,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>6E5FAD32-324D-4B97-9532-E6EB4AE4E759</key>
+		<key>C97E56F9-16C8-4DC5-B5A5-D0E1505E8887</key>
 		<dict>
 			<key>from</key>
 			<string>A2E0CBEE-C562-4FE7-89C7-2E410086A8E6 - A2E0CBEE-C562-4FE7-89C7-2E410086A8E6</string>
