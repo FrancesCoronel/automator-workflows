@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>413.1</string>
+	<string>428</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.7</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -73,7 +73,7 @@
 				<key>ActionRuntimeParameters</key>
 				<dict>
 					<key>defaultLocation</key>
-					<string>/Users/fvcproductions/Downloads</string>
+					<string>/Users/frances.coronel/Downloads</string>
 					<key>granularity</key>
 					<integer>2</integer>
 					<key>multipleSelection</key>
@@ -81,7 +81,7 @@
 					<key>promptMessage</key>
 					<string>Choose a Finder Item:</string>
 					<key>temporary items path</key>
-					<string>/var/folders/3g/0c_7g1bs4xqcjjkjck773_t00000gn/T/FE027104-F562-43B0-8261-E17D29ED230A/1/com.apple.Automator.AskForFinderItems</string>
+					<string>/var/folders/hn/w0gqrbq55lgf98jl1c6xkj742qh1yz/T/D8F31033-F106-455B-9FFB-C23BF0F10F32/1/com.apple.Automator.AskForFinderItems</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AskForFinderItems</string>
@@ -175,7 +175,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>529.000000:158.000000</string>
+				<string>309.000000:158.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -232,7 +232,7 @@
 					<key>recurse</key>
 					<true/>
 					<key>temporary items path</key>
-					<string>/var/folders/3g/0c_7g1bs4xqcjjkjck773_t00000gn/T/FE027104-F562-43B0-8261-E17D29ED230A/1/com.apple.Automator.GetFolderContents</string>
+					<string>/var/folders/hn/w0gqrbq55lgf98jl1c6xkj742qh1yz/T/D8F31033-F106-455B-9FFB-C23BF0F10F32/1/com.apple.Automator.GetFolderContents</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.GetFolderContents</string>
@@ -282,7 +282,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>529.000000:258.000000</string>
+				<string>309.000000:258.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Folder Contents.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -348,7 +348,7 @@
 					<key>chosenAlbum</key>
 					<string>loading…</string>
 					<key>importDestination</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>newAlbumName</key>
 					<string>Imported Fonts</string>
 					<key>validateFonts</key>
@@ -363,11 +363,11 @@
 					<key>chosenAlbum</key>
 					<string>loading…</string>
 					<key>importDestination</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>newAlbumName</key>
 					<string>Imported Fonts</string>
 					<key>temporary items path</key>
-					<string>/var/folders/3g/0c_7g1bs4xqcjjkjck773_t00000gn/T/FE027104-F562-43B0-8261-E17D29ED230A/1/com.apple.Automator.AddToFontLibrary</string>
+					<string>/var/folders/hn/w0gqrbq55lgf98jl1c6xkj742qh1yz/T/D8F31033-F106-455B-9FFB-C23BF0F10F32/1/com.apple.Automator.AddToFontLibrary</string>
 					<key>validateFonts</key>
 					<true/>
 				</dict>
@@ -484,7 +484,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>529.000000:466.000000</string>
+				<string>309.000000:448.500000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Add to Font Library.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -494,14 +494,14 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>A3EB7944-8200-4FDC-B6F0-2400C0C40694</key>
+		<key>5CF78739-C42E-474A-8991-8B78F6C34CE2</key>
 		<dict>
 			<key>from</key>
 			<string>E10B03B1-BB61-4C68-AD4E-DC56FCBA2C29 - E10B03B1-BB61-4C68-AD4E-DC56FCBA2C29</string>
 			<key>to</key>
 			<string>F5E3FA6B-8535-4D76-BD76-2276507FF5DA - F5E3FA6B-8535-4D76-BD76-2276507FF5DA</string>
 		</dict>
-		<key>E9AB3469-3C14-4B5E-BB50-40344138A7A0</key>
+		<key>D65D157D-8620-437B-82CA-1A23C7061E89</key>
 		<dict>
 			<key>from</key>
 			<string>1A5F78DC-8BAD-4B56-9383-69A57285D03F - 1A5F78DC-8BAD-4B56-9383-69A57285D03F</string>
